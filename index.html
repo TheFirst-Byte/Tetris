@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="start-screen">
+            <button id="start-button">Start Game</button>
+        </div>
+        <div id="game-screen" class="hidden">
+            <canvas id="matrix-bg"></canvas>
+                    <div style="display: flex; flex-direction: row; align-items: center; justify-content: center; width: 100%; max-width: 700px; margin: 0 auto; gap: 32px;">
+                            <div id="info-panel" style="display: flex; flex-direction: column; align-items: flex-end; min-width: 90px;">
+                            <div id="score">Score: 0</div>
+                            <div id="level">Level: 1</div>
+                        </div>
+                        <canvas id="game-board" style="display: block; margin: 0 100px;"></canvas>
+                        <div id="next-tetromino" style="display: flex; flex-direction: column; align-items: center; min-width: 90px;">
+                            <h3>Next:</h3>
+                            <canvas id="next-board" width="120" height="120"></canvas>
+                        </div>
+                </div>
+            <div id="controls">
+                <button id="left-btn" aria-label="Move Left">&#8678;</button>
+                <button id="rotate-btn" aria-label="Rotate">&#8635;</button>
+                <button id="right-btn" aria-label="Move Right">&#8680;</button>
+                <button id="down-btn" aria-label="Move Down">&#8681;</button>
+                <button id="drop-btn" aria-label="Hard Drop">&#128317;</button>
+            </div>
+            <div id="pause-container">
+                <button id="pause-button">Pause</button>
+            </div>
+        </div>
+        <div id="game-over-screen" class="hidden">
+            <h1>Game Over</h1>
+            <div id="final-score">Your Score: 0</div>
+            <button id="restart-button">Restart</button>
+        </div>
+        <div id="game-over-overlay" class="hidden">
+            <h1>Game Over</h1>
+            <div id="final-score-overlay">Your Score: 0</div>
+            <button id="restart-overlay">Restart</button>
+        </div>
+    </div>
+    <div id="top-bar" style="width: 100%; display: flex; flex-direction: column; align-items: center; margin-bottom: 12px;">
+        <div id="game-heading" style="width: 100%; text-align: center; margin-top: 12px;">
+            <h1 class="animated-heading">TETRIS GALAXY</h1>
+        </div>
+        <div id="player-info" style="position: absolute; top: 18px; right: 32px; text-align: right;">
+            <div id="player-name"></div>
+            <div id="player-highscore"></div>
+        </div>
+    </div>
+    <div id="username-modal" class="modal">
+        <div class="modal-content">
+            <h2>Enter Your Name</h2>
+            <input type="text" id="username-input" placeholder="Player Name" maxlength="16" />
+            <button id="username-submit">Start</button>
+        </div>
+    </div>
+    <div id="player-name" style="text-align:center; font-size:1.2rem; margin-bottom:8px;"></div>
+    <script src="script.js"></script>
+</body>
+</html>

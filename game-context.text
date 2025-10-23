@@ -1,0 +1,77 @@
+✅ GitHub Copilot Prompt (Complete Version)
+
+Create a complete web-based Tetris game using HTML, CSS, and JavaScript. The game should be playable on both desktop and mobile devices, with a responsive and mobile-optimized layout. Include the following features:
+🎮 Game Mechanics:
+
+Implement classic Tetris gameplay with falling tetrominoes.
+Support keyboard controls (desktop) and touch gestures (mobile): swipe to move, tap to rotate, long press to drop.
+
+🖼️ User Interface:
+
+Design a modern, visually appealing UI using CSS animations and transitions.
+Include start screen, pause/resume button, and game-over screen.
+Show current score, level, and next tetromino preview.
+
+💾 Session and Score Saving:
+
+Use localStorage or sessionStorage to save high scores and session progress.
+Allow users to resume the game after page reload.
+
+📱 Mobile Optimization:
+
+Use responsive design (media queries, flexbox/grid) for various screen sizes.
+Optimize performance for mobile browsers.
+Ensure touch controls are intuitive and responsive.
+
+🔊 Sound Effects:
+
+Add sound effects for:
+
+Tetromino movement
+Rotation
+Line clear
+Level up
+Game over
+
+
+Use lightweight audio files (e.g., .mp3 or .ogg) and preload them for smooth playback.
+
+📳 Haptic Feedback:
+
+Implement haptic feedback using the Vibration API for supported mobile devices.
+Trigger vibrations on:
+
+Line clear
+Level up
+Game over
+
+
+
+🎚️ Audio & Vibration Toggle Controls:
+
+Add toggle buttons in the UI to enable/disable sound effects and vibration.
+Persist user preferences using localStorage.
+Reflect toggle state visually (e.g., icons or switches).
+
+🌙 Dark Mode Toggle:
+
+Add a toggle switch to enable/disable dark mode.
+Use CSS variables or classes to switch between light and dark themes.
+Persist user preference using localStorage.
+
+✨ Animations and Visuals:
+
+Use CSS animations for tetromino movement and line clearing.
+Add visual effects for level-up, game-over, and score updates.
+Use vibrant colors, gradients, and shadows for a polished look.
+
+🧩 Code Structure:
+
+Organize code into index.html, style.css, and script.js.
+Use modular JavaScript functions for game logic.
+Add comments and documentation for maintainability.
+
+♿ Accessibility & UX:
+
+Ensure buttons and controls are accessible and easy to use.
+Provide audio toggle, vibration toggle, and dark mode toggle for user preferences.
